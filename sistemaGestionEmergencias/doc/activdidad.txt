@@ -1,0 +1,61 @@
+EA2: Sistema de Gestión de Emergencias Médicas con Concurrencia
+Fecha de entrega Viernes a las 23:59 Puntos 100 Entregando una carga de archivo Disponible 10 de nov en 0:00 - 28 de nov en 23:59
+EA2: Sistema de Gestión de Emergencias Médicas con Concurrencia
+ 
+
+Objetivo:
+Aplicar los conceptos avanzados de concurrencia y programación multihilo en Java para desarrollar un sistema que gestione recursos compartidos en tiempo real bajo condiciones de alta presión.
+
+ 
+
+Instrucciones:
+Para el desarrollo de la actividad se debe realizar lo siguiente:
+
+Leer detenidamente el documento Caso_Estudio_Emergencias.pdf.
+
+Diseñar y construir una aplicación en Java que simule el Sistema de Gestión de Emergencias Médicas descrito en el caso de estudio.
+
+Aspectos a tener en cuenta para construir la aplicación:
+
+Implementar un modelo de concurrencia que permita el procesamiento simultáneo de múltiples emergencias médicas
+
+Aplicar mecanismos de sincronización para manejar el acceso a recursos compartidos (ambulancias, médicos, equipos)
+
+Diseñar un algoritmo de priorización que considere múltiples factores (gravedad, tiempo de espera, ubicación)
+
+Implementar patrones de diseño apropiados para sistemas concurrentes
+
+Desarrollar mecanismos de comunicación entre los distintos subsistemas (operadores, despachadores, ambulancias, hospitales)
+
+Crear un sistema de monitoreo que actualice en tiempo real el estado de emergencias y recursos
+
+Para esta actividad el estudiante se apoyará en el material dado por el tutor en los encuentros sincrónicos y anuncios a través de la plataforma de Canvas. Por lo tanto, se recomienda asistir a los encuentros o mirar las grabaciones de las sesiones y estar activos en la plataforma de Canvas.
+
+ 
+
+Entregables
+Código fuente completo alojado en un repositorio Git (GitHub, GitLab o Bitbucket) con instrucciones claras de ejecución.
+
+Video explicativo (10-15 minutos) publicado en YouTube que incluya:
+
+Demostración del sistema en funcionamiento
+
+Explicación de la arquitectura y patrones de concurrencia implementados
+
+Análisis de potenciales problemas de concurrencia y cómo fueron resueltos
+
+Justificación de las decisiones de diseño tomadas
+
+Documento técnico breve (3-5 páginas) que detalle:
+
+Diagrama de clases y componentes del sistema
+
+Estrategias de sincronización utilizadas
+
+Análisis de rendimiento bajo diferentes cargas
+
+Conclusiones y lecciones aprendidas
+
+La actividad puede realizarse en grupos de máximo 4 personas. Es necesario mencionar a todos los integrantes al inicio del video y especificar la contribución de cada uno.
+
+Nota: Si el estudiante enfrenta dificultades técnicas para subir el video, deberá presentar un documento técnico ampliado (8-10 páginas) siguiendo normas APA, que incluya capturas de pantalla detalladas del sistema en funcionamiento y explicaciones minuciosas de cada componente implementado

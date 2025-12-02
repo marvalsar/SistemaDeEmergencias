@@ -1,0 +1,61 @@
+/* ============================
+   ESTILOS SIMULACIÓN
+   ============================ */
+
+.simulation-root {
+  -fx-background-color: #1a237e;
+}
+
+.top-panel {
+  -fx-background-color: rgba(0, 0, 0, 0.3);
+  -fx-border-color: rgba(255, 255, 255, 0.2);
+  -fx-border-width: 0 0 2 0;
+  -fx-padding: 15;
+}
+
+.simulation-title {
+  -fx-font-size: 28px;
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+}
+
+.time-label {
+  -fx-font-size: 20px;
+  -fx-font-weight: bold;
+  -fx-text-fill: rgb(100, 255, 100);
+}
+
+.casos-label {
+  -fx-font-size: 18px;
+  -fx-text-fill: white;
+}
+
+.map-canvas {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0.3, 0, 3);
+}
+
+.stats-side-panel {
+  -fx-background-color: rgba(0, 0, 0, 0.4);
+  -fx-border-color: rgba(255, 255, 255, 0.2);
+  -fx-border-width: 0 0 0 2;
+  -fx-padding: 20;
+}
+
+.stats-title {
+  -fx-font-size: 22px;
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+}
+
+.events-title {
+  -fx-font-size: 18px;
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+}
+
+.bottom-control-panel {
+  -fx-background-color: rgba(0, 0, 0, 0.3);
+  -fx-border-color: rgba(255, 255, 255, 0.2);
+  -fx-border-width: 2 0 0 0;
+  -fx-padding: 15;
+}

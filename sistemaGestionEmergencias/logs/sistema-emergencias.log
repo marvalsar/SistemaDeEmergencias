@@ -1,0 +1,315 @@
+2025-12-01 19:15:10.600 [main] INFO  org.iudigital.emergencias.Main - === Iniciando Sistema de Gestión de Emergencias Médicas v2.0.0 ===
+2025-12-01 19:15:10.603 [main] DEBUG o.i.e.observer.EventPublisher - Observer registrado: ConsoleObserver
+2025-12-01 19:15:10.606 [main] INFO  org.iudigital.emergencias.Main - Sistema de eventos configurado
+2025-12-01 19:15:10.608 [main] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 19:15:10.608 [main] INFO  org.iudigital.emergencias.Main - SimulacionManager obtenido
+2025-12-01 19:15:10.609 [main] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 3 ambulancias, 2 equipos médicos, 2 operadores
+2025-12-01 19:15:10.614 [main] INFO  o.i.e.manager.SimulacionManager - 3 ambulancias lanzadas y disponibles
+2025-12-01 19:15:10.618 [main] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 19:15:10.624 [main] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 19:15:10.628 [main] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 19:15:10.630 [main] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 19:15:10.637 [main] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 19:15:40.637 [pool-2-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (30 segundos)
+2025-12-01 19:15:40.638 [pool-2-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 19:15:40.640 [pool-2-thread-1] ERROR o.i.e.manager.SimulacionManager - Error al detener executor service
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1667)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1464)
+	at org.iudigital.emergencias.manager.SimulacionManager.detenerSimulacion(SimulacionManager.java:212)
+	at org.iudigital.emergencias.manager.SimulacionManager.lambda$0(SimulacionManager.java:122)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-12-01 19:15:40.643 [pool-2-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 19:15:42.698 [main] INFO  o.i.e.manager.SimulacionManager - Resumen final generado: 5 casos atendidos, 41 en cola, 3 asignados
+2025-12-01 19:15:42.699 [main] INFO  org.iudigital.emergencias.Main - === Sistema de Gestión de Emergencias finalizado exitosamente ===
+2025-12-01 19:23:12.328 [main] INFO  org.iudigital.emergencias.Main - === Iniciando Sistema de Gestión de Emergencias Médicas v2.0.0 ===
+2025-12-01 19:23:14.198 [main] DEBUG o.i.e.observer.EventPublisher - Observer registrado: VisualObserver
+2025-12-01 19:23:14.200 [main] INFO  org.iudigital.emergencias.Main - Sistema de eventos visuales configurado
+2025-12-01 19:23:15.304 [main] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 19:23:15.304 [main] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 19:23:15.306 [main] INFO  org.iudigital.emergencias.Main - SimulacionManager obtenido
+2025-12-01 19:23:15.319 [main] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 4 ambulancias, 2 equipos médicos, 2 operadores
+2025-12-01 19:23:15.328 [main] INFO  o.i.e.manager.SimulacionManager - 4 ambulancias lanzadas y disponibles
+2025-12-01 19:23:15.338 [main] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 19:23:15.341 [main] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 19:23:15.343 [main] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 19:23:15.347 [main] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 19:23:15.349 [main] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 19:23:15.353 [main] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 19:23:45.358 [pool-2-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (30 segundos)
+2025-12-01 19:23:45.358 [pool-2-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 19:23:45.359 [pool-2-thread-1] ERROR o.i.e.manager.SimulacionManager - Error al detener executor service
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1667)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1464)
+	at org.iudigital.emergencias.manager.SimulacionManager.detenerSimulacion(SimulacionManager.java:238)
+	at org.iudigital.emergencias.manager.SimulacionManager.lambda$inicializarSimulacion$0(SimulacionManager.java:136)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-12-01 19:23:45.363 [pool-2-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 19:23:46.519 [main] INFO  o.i.e.manager.SimulacionManager - Resumen final generado: 7 casos atendidos, 34 en cola, 3 asignados
+2025-12-01 19:23:46.520 [main] INFO  org.iudigital.emergencias.Main - === Sistema de Gestión de Emergencias finalizado exitosamente ===
+2025-12-01 19:24:25.533 [main] INFO  org.iudigital.emergencias.Main - === Iniciando Sistema de Gestión de Emergencias Médicas v2.0.0 ===
+2025-12-01 19:24:27.420 [main] DEBUG o.i.e.observer.EventPublisher - Observer registrado: VisualObserver
+2025-12-01 19:24:27.420 [main] INFO  org.iudigital.emergencias.Main - Sistema de eventos visuales configurado
+2025-12-01 19:24:28.513 [main] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 19:24:28.514 [main] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 19:24:28.514 [main] INFO  org.iudigital.emergencias.Main - SimulacionManager obtenido
+2025-12-01 19:24:28.525 [main] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 4 ambulancias, 2 equipos médicos, 2 operadores
+2025-12-01 19:24:28.533 [main] INFO  o.i.e.manager.SimulacionManager - 4 ambulancias lanzadas y disponibles
+2025-12-01 19:24:28.539 [main] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 19:24:28.541 [main] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 19:24:28.544 [main] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 19:24:28.546 [main] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 19:24:28.547 [main] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 19:24:28.550 [main] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 19:24:58.551 [pool-2-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (30 segundos)
+2025-12-01 19:24:58.551 [pool-2-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 19:24:58.552 [pool-2-thread-1] ERROR o.i.e.manager.SimulacionManager - Error al detener executor service
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1667)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1464)
+	at org.iudigital.emergencias.manager.SimulacionManager.detenerSimulacion(SimulacionManager.java:238)
+	at org.iudigital.emergencias.manager.SimulacionManager.lambda$inicializarSimulacion$0(SimulacionManager.java:136)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-12-01 19:24:58.554 [pool-2-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 19:24:59.645 [main] INFO  o.i.e.manager.SimulacionManager - Resumen final generado: 8 casos atendidos, 32 en cola, 4 asignados
+2025-12-01 19:24:59.646 [main] INFO  org.iudigital.emergencias.Main - === Sistema de Gestión de Emergencias finalizado exitosamente ===
+2025-12-01 19:40:50.188 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 19:41:18.408 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 19:41:18.432 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 19:41:18.646 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 19:41:18.647 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 6 ambulancias, 3 equipos médicos, 2 operadores
+2025-12-01 19:41:18.654 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 6 ambulancias lanzadas y disponibles
+2025-12-01 19:41:18.662 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 3 equipos médicos especializados en línea
+2025-12-01 19:41:18.666 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 19:41:18.667 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 19:41:18.670 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 19:41:18.674 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 19:41:18.677 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 19:44:30.678 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (192 segundos)
+2025-12-01 19:44:30.678 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 19:44:30.679 [pool-3-thread-1] ERROR o.i.e.manager.SimulacionManager - Error al detener executor service
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1667)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1464)
+	at org.iudigital.emergencias.manager.SimulacionManager.detenerSimulacion(SimulacionManager.java:238)
+	at org.iudigital.emergencias.manager.SimulacionManager.lambda$inicializarSimulacion$0(SimulacionManager.java:136)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-12-01 19:44:30.686 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:04:54.509 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 20:06:27.064 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 20:06:27.071 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 20:06:27.625 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 20:06:27.627 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 5 ambulancias, 2 equipos médicos, 1 operadores
+2025-12-01 20:06:27.638 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 5 ambulancias lanzadas y disponibles
+2025-12-01 20:06:27.655 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 20:06:27.660 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 1 operadores listos para recibir llamadas
+2025-12-01 20:06:27.664 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 20:06:27.670 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 20:06:27.674 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 20:06:27.678 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 20:07:10.679 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (43 segundos)
+2025-12-01 20:07:10.679 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 20:07:10.680 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 20:07:10.681 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:18:17.568 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 20:18:20.165 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 20:20:13.762 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 20:25:35.180 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 20:25:35.183 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 20:25:35.506 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 20:25:35.506 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 4 ambulancias, 2 equipos médicos, 2 operadores
+2025-12-01 20:25:35.516 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 4 ambulancias lanzadas y disponibles
+2025-12-01 20:25:35.523 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 20:25:35.529 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 20:25:35.534 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 20:25:35.539 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 20:25:35.543 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 20:25:35.547 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 20:26:05.547 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (30 segundos)
+2025-12-01 20:26:05.547 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 20:26:05.547 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 20:26:05.548 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:28:00.893 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 20:30:04.192 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 20:30:24.867 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 20:30:24.871 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 20:30:25.135 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 20:30:25.135 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 10 ambulancias, 5 equipos médicos, 2 operadores
+2025-12-01 20:30:25.143 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 10 ambulancias lanzadas y disponibles
+2025-12-01 20:30:25.151 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 5 equipos médicos especializados en línea
+2025-12-01 20:30:25.156 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 20:30:25.158 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 20:30:25.164 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 20:30:25.165 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 20:30:25.168 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 20:30:55.168 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (30 segundos)
+2025-12-01 20:30:55.168 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 20:30:55.168 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 20:30:55.168 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:31:41.260 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 20:31:59.781 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 20:32:10.228 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 20:32:10.231 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 20:32:10.478 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 20:32:10.479 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 4 ambulancias, 2 equipos médicos, 2 operadores
+2025-12-01 20:32:10.486 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 4 ambulancias lanzadas y disponibles
+2025-12-01 20:32:10.499 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 20:32:10.503 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 20:32:10.508 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 20:32:10.513 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 20:32:10.516 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 20:32:10.518 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 20:33:07.519 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (57 segundos)
+2025-12-01 20:33:07.519 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 20:33:07.519 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 20:33:07.520 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:37:22.576 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 20:40:03.768 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 20:40:24.219 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 20:40:24.221 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 20:40:24.525 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 20:40:24.525 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 4 ambulancias, 2 equipos médicos, 2 operadores
+2025-12-01 20:40:24.531 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 4 ambulancias lanzadas y disponibles
+2025-12-01 20:40:24.538 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 20:40:24.541 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 20:40:24.544 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 20:40:24.552 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 20:40:24.554 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 20:40:24.556 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 20:41:21.557 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (57 segundos)
+2025-12-01 20:41:21.558 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 20:41:21.558 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 20:41:21.559 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:41:21.573 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:22.066 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:22.577 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:23.063 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:23.575 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:24.066 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:24.561 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:25.075 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:25.570 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:25.815 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:26.982 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:27.551 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:27.975 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:28.192 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:28.398 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:28.578 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:28.780 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:28.960 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:41:33.048 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 20:45:00.599 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 20:45:35.526 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 20:45:35.531 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 20:45:35.765 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 20:45:35.766 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 4 ambulancias, 2 equipos médicos, 2 operadores
+2025-12-01 20:45:35.772 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 4 ambulancias lanzadas y disponibles
+2025-12-01 20:45:35.780 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 20:45:35.785 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 20:45:35.788 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 20:45:35.790 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 20:45:35.792 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 20:45:35.797 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 20:46:32.810 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (57 segundos)
+2025-12-01 20:46:32.810 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 20:46:32.810 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 20:46:32.810 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:46:32.824 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:48:30.968 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:48:33.503 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 20:52:20.276 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 20:53:21.520 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 20:53:21.525 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 20:53:21.783 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 20:53:21.784 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 4 ambulancias, 2 equipos médicos, 2 operadores
+2025-12-01 20:53:21.790 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 4 ambulancias lanzadas y disponibles
+2025-12-01 20:53:21.798 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 20:53:21.801 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 20:53:21.804 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 20:53:21.809 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 20:53:21.812 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 20:53:21.815 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 20:54:18.826 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (57 segundos)
+2025-12-01 20:54:18.826 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 20:54:18.828 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 20:54:18.833 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 20:54:18.834 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Todos los threads terminaron correctamente
+2025-12-01 20:54:18.834 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:54:18.835 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:55:01.330 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 20:57:01.002 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 20:57:06.446 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 20:57:06.448 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 20:57:06.743 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 20:57:06.745 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 4 ambulancias, 2 equipos médicos, 2 operadores
+2025-12-01 20:57:06.754 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 4 ambulancias lanzadas y disponibles
+2025-12-01 20:57:06.763 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 equipos médicos especializados en línea
+2025-12-01 20:57:06.769 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 20:57:06.775 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 20:57:06.777 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 20:57:06.780 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 20:57:06.792 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 20:58:03.793 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (57 segundos)
+2025-12-01 20:58:03.793 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 20:58:03.793 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 20:58:03.794 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 20:58:03.813 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 20:58:29.102 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 20:58:55.566 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 20:59:16.978 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 20:59:16.982 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 20:59:17.363 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 20:59:17.363 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 8 ambulancias, 3 equipos médicos, 2 operadores
+2025-12-01 20:59:17.376 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 8 ambulancias lanzadas y disponibles
+2025-12-01 20:59:17.392 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 3 equipos médicos especializados en línea
+2025-12-01 20:59:17.396 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 2 operadores listos para recibir llamadas
+2025-12-01 20:59:17.402 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 20:59:17.408 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 20:59:17.413 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 20:59:17.417 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 21:00:17.417 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (60 segundos)
+2025-12-01 21:00:17.417 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 21:00:17.417 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 21:00:17.418 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 21:00:17.428 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 21:01:59.661 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Cerrando aplicación
+2025-12-01 21:37:23.893 [JavaFX Application Thread] INFO  o.i.emergencias.ui.EmergenciasApp - Iniciando aplicación JavaFX
+2025-12-01 21:37:57.004 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - SimulacionManager inicializado
+2025-12-01 21:37:57.044 [JavaFX Application Thread] DEBUG o.i.e.observer.EventPublisher - Observer registrado: JavaFXObserver
+2025-12-01 21:37:57.516 [JavaFX Application Thread] DEBUG o.i.e.manager.SimulacionManager - EventPublisher configurado
+2025-12-01 21:37:57.516 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Inicializando simulación: 8 ambulancias, 1 equipos médicos, 1 operadores
+2025-12-01 21:37:57.646 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 8 ambulancias lanzadas y disponibles
+2025-12-01 21:37:57.672 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 1 equipos médicos especializados en línea
+2025-12-01 21:37:57.701 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - 1 operadores listos para recibir llamadas
+2025-12-01 21:37:57.749 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Despachador en línea para coordinar recursos
+2025-12-01 21:37:57.762 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor de tiempo real iniciado
+2025-12-01 21:37:57.781 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Monitor visual iniciado
+2025-12-01 21:37:57.783 [JavaFX Application Thread] INFO  o.i.e.manager.SimulacionManager - Simulación iniciada exitosamente
+2025-12-01 21:39:21.784 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Tiempo de simulación finalizado (84 segundos)
+2025-12-01 21:39:21.784 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Deteniendo simulación...
+2025-12-01 21:39:21.785 [pool-3-thread-1] WARN  o.i.e.manager.SimulacionManager - Interrupción durante cierre, finalizando inmediatamente
+2025-12-01 21:39:21.785 [pool-3-thread-1] INFO  o.i.e.manager.SimulacionManager - Simulación detenida exitosamente
+2025-12-01 21:39:21.842 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
+2025-12-01 21:40:28.881 [JavaFX Application Thread] WARN  o.i.e.manager.SimulacionManager - La simulación no está activa
